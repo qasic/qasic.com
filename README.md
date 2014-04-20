@@ -1,11 +1,12 @@
-qasic.com
-=========
+# qasic.com
 
 Simple homepage for my website
 
-minify html+css
-===============
+# minify html+css
 
-To shorten IDs - http://htmlmuncher.com/
-To minify CSS + HTML - http://www.willpeavy.com/minifier/
+* To shorten IDs - [HTML Muncher](htmlmuncher.com)
+* To minify CSS + HTML (original: [Markup Min](prettydiff.com)) - [CompressMyCode](compressmycode.com)
 
+# sprite generation
+
+[SpritePad](wearekiss.com/spritepad)
