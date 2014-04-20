@@ -213,3 +213,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#Disallow Full Res Avatar from being uploaded to the web
+avatar.png
