@@ -5,6 +5,7 @@
 			background-color: #4d8a47;
 			color: #dbe8da;
 			font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+			margin: 0px;
 		}
 		h2 {
 			font-size: 14pt;
@@ -12,10 +13,6 @@
 		}
 		.ruled-top {
 			border-top: 3px solid rgba(255,255,255,0.1);
-		}
-		.section {
-			padding-top: 15px;
-			padding-bottom: 15px;
 		}
 		.copy {
 			color: #626566;
@@ -33,19 +30,35 @@
 			border-color: #47a4cf;
 			outline: none;
 		}
+		.pad5 {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.pad10 {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 		.social {
 			margin: 5px;
 		}
 		#container {
 			min-height: 10em;
 			vertical-align: middle;
+			
+			position: absolute;
+			left: 50%;
+			top: 45%;			
+
+			height: 450px;
+			width: 900px;
+
+			margin-top: -225px;  /* needs to be - half the height  */
+			margin-left: -450px; /* needs to be - half the width */			
 		}
 		#avatar {
 			border: 2px solid rgba(0,0,0,0.1);
 			border-radius: 5px;
 			float: left;
-			margin-bottom: 20px;
-			margin-right: 10px;
 		}
 		#description {
 			background: #fff;
@@ -96,12 +109,12 @@
 </head>
 <body>
 	<div id="container">
-	  <div class="ruled-top section">
+	  <div class="ruled-top pad10">
 			<img id="avatar" src="avatar.png"/>
 			<div class="post-panel">
 				<div id="description" class="copy">
 					<h1 id="name">K Fung</h1>
-					<p id="tag">Developer. Hobbyist photographer. Dessert addict. Not necessarily in that order.</p>
+					<p id="tag">Developer. Hobbyist photographer. Dessert addict.</p>
 					<h2>Q's Quarter (Food Roll)</h2>
 					<p class="social"><a href="http://q.qasic.com"><img src="webicons/webicon-tumblr.png" alt="Q's Quarter"/></a></p>
 					<h2>Photo Roll</h2>
@@ -111,9 +124,9 @@
 				</div>
 			</div>
 		</div>
-		<div id="footer" class="ruled-top section">
+		<div id="footer" class="ruled-top pad5">
 			<div id="copyright">&copy; 2014 <a href="/">K Fung</a>. All Rights Reserved.</div>
-			<div id="credits">Based on <a href="https://www.tumblr.com/theme/17403">Effector Theme</a>. Profile picture by <a href="http://www.wastedtalent.ca">Angela Melick</a>. Webicons by <a href="http://fairheadcreative.com">Fairhead Creative</a>.</div>
+			<div id="credits">Based on <a href="https://www.tumblr.com/theme/17403">Effector Theme</a>. Profile picture by <a href="http://www.wastedtalent.ca">Angela Melick</a>. Icons by <a href="http://fairheadcreative.com">Fairhead Creative</a>.</div>
 		</div>
 	</div>
 </body>
