@@ -14,6 +14,7 @@ Simple homepage for my website
 
 * To generate favicon.ico (rounded, Roboto Condensed, 95, #FFF, #4d8a47) - [favicon.ico](https://favicon.io)
 
-# test web server
+# Others
 
-* Mongoose - [Mongoose](https://cesanta.com/mongoose-library.html)
+* iPhone media queries - (http://stephen.io/mediaqueries)
+* Mongoose HTTP server - [Mongoose](https://cesanta.com/mongoose-library.html)
