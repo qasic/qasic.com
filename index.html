@@ -121,9 +121,35 @@
 		#credits {
 			float: right;
 		}
+		/* landscape */
 		@media only screen
-			and (min-device-width : 300px) 
-			and (max-device-width : 812px) {
+			and (min-device-width : 320px) 
+			and (max-device-width : 812px) 		
+			and (orientation : landscape) {
+			#avatar {
+				margin-left: 10px;
+				width: 47%;
+			}
+			#container {
+				left: unset;
+				margin-top: unset;
+				margin-left: 30px;
+				margin-right: 30px;
+				top: unset;
+				width: 90%;
+			}
+			#description {
+				height: unset;
+				padding-bottom: 4.6%;
+				margin-left: 50%; /* same as #avatar + 3% */
+				width: 40%;
+			}
+		}
+		/* portrait */
+		@media only screen
+			and (min-device-width : 320px) 
+			and (max-device-width : 812px)
+			and (orientation : portrait) {
 				.post-panel {
 					clear: both;
 					max-width: 250px;
@@ -135,24 +161,24 @@
 					margin-bottom: 5px;
 				}
 				#container {
-					height: auto;
-					left: auto;
+					height: unset;
+					left: unset;
 					margin-top: 10px;
 					margin-left: 10px;
 					margin-right: 10px;
-					top: auto;
+					top: unset;
 					width: 300px;
 				}
 				#description {
-					height: auto;
-					margin-left: auto;
-					margin-top: auto;
+					height: unset;
+					margin-left: unset;
+					margin-top: unset;
 					min-width: 300px;					
 				}
 		}
 	</style>
 	<title>K Fung</title>
-	<meta name="viewport" content="width=device-width"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 </head>
 <body>
 	<div id="container">
