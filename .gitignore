@@ -216,3 +216,6 @@ pip-log.txt
 
 #Disallow Full Res Avatar from being uploaded to the web
 avatar.png
+
+#Mongoose HTTP server
+mongoose-free*.exe

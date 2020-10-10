@@ -85,9 +85,7 @@
 			border-radius: 5px;
 			height: 370px;
 			margin-left: 350px; /* size of picture */
-			padding-bottom: 20px;
-			padding-left: 20px;
-			padding-top: 10px;
+			padding: 10px 20px 20px 20px;
 		}
 		#description img {
 			margin: 0;
@@ -123,8 +121,38 @@
 		#credits {
 			float: right;
 		}
+		@media only screen
+			and (min-device-width : 300px) 
+			and (max-device-width : 812px) {
+				.post-panel {
+					clear: both;
+					max-width: 250px;
+				}
+				.ruled-top {
+					width: 115%;
+				}
+				#avatar {
+					margin-bottom: 5px;
+				}
+				#container {
+					height: auto;
+					left: auto;
+					margin-top: 10px;
+					margin-left: 10px;
+					margin-right: 10px;
+					top: auto;
+					width: 300px;
+				}
+				#description {
+					height: auto;
+					margin-left: auto;
+					margin-top: auto;
+					min-width: 300px;					
+				}
+		}
 	</style>
 	<title>K Fung</title>
+	<meta name="viewport" content="width=device-width"/>
 </head>
 <body>
 	<div id="container">
@@ -133,7 +161,7 @@
 			<div class="post-panel">
 				<div id="description" class="copy">
 					<h1 id="name">K Fung</h1>
-					<p id="tag">Developer. Boardgamer. Photographer. Dessert addict.</p>
+					<p id="tag">Developer. Boardgamer. Photographer. Sweet tooth.</p>
 					<h2>Photo Roll</h2>
 					<p class="social"><a href="http://flickr.com/qasic" class="webicon-flickr"></a></p>
 					<h2>Contact Me</h2>
@@ -143,7 +171,7 @@
 		</div>
 		<div id="footer" class="ruled-top pad5">
 			<div id="copyright">&copy; 2020 <a href="/">K Fung</a>. All Rights Reserved.</div>
-			<div id="credits">Based on <a href="https://www.tumblr.com/theme/17403">Effector Theme</a>. Profile picture by <a href="http://www.wastedtalent.ca">Angela Melick</a>. Icons by <a href="http://fairheadcreative.com">Fairhead Creative</a>.</div>
+			<div id="credits">Profile picture by <a href="http://www.wastedtalent.ca">Angela Melick</a>. Icons by <a href="http://fairheadcreative.com">Fairhead Creative</a>.</div>
 		</div>
 	</div>
 </body>
