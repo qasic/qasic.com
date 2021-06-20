@@ -1,0 +1,29 @@
+<html>
+  <head>
+     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+     <script>
+        function writeln(text) {
+          const app = document.getElementById("app");
+          const p = document.createElement("p")
+          app.append(text, p)
+        }
+        
+        function reqListener() {
+          const data = JSON.parse(this.responseText);
+          data.response.reverse().forEach(ep => {
+            if (ep.subtitle_completions.en) {
+              writeln(`${ep.number}: ${ep.subtitle_completions.en}%`);
+            }
+          });
+        }
+        
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", reqListener);
+        oReq.open("GET", `https://api.viki.io/v4/containers/37788c/episodes.json?token=undefined&direction=asc&with_upcoming=false&sort=number&blocked=true&page=1&per_page=20&watch_schedule=1&ws_end_time=${Date.now()}&app=100000a`);
+        oReq.send();
+     </script>
+  </head>
+  <body>
+     <div id="app"></div>
+  </body>
+</html>
