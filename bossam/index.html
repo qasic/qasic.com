@@ -1,6 +1,7 @@
 <html>
   <head>
      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+     <meta http-equiv="refresh" content="60"> 
      <script>
         function writeln(text) {
           const app = document.getElementById("app");
@@ -10,9 +11,15 @@
         
         function reqListener() {
           const data = JSON.parse(this.responseText);
+          let first = true;
           data.response.reverse().forEach(ep => {
             if (ep.subtitle_completions.en) {
-              writeln(`${ep.number}: ${ep.subtitle_completions.en}%`);
+              const phrase = `${ep.number}: ${ep.subtitle_completions.en}%`;
+              if (first) {
+                document.title = `Bossam ${phrase}`;
+                first = false;
+              }
+              writeln(phrase);
             }
           });
         }
